@@ -2,10 +2,12 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+//import dotenv from "dotenv";
 
+console.log(process.env.VUE_APP_APIKEY);
 // firebase init goes here
 const config = {
-  apiKey: "AIzaSyCuEAWniV6tQJiyQUFZaf_2nLgY1EbZqpc",
+  apiKey: process.env.VUE_APP_APIKEY,
   authDomain: "",
   databaseURL: "",
   projectId: "vue-app-5095b",
