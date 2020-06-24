@@ -4,15 +4,15 @@ import "firebase/firestore";
 import "firebase/auth";
 //import dotenv from "dotenv";
 
-console.log(process.env.VUE_APP_APIKEY);
+//console.log(process.env.VUE_APP_APIKEY);
 // firebase init goes here
 const config = {
-  apiKey: process.env.VUE_APP_APIKEY,
-  authDomain: "",
-  databaseURL: "",
-  projectId: "vue-app-5095b",
-  storageBucket: "",
-  messagingSenderId: ""
+    apiKey: process.env.VUE_APP_APIKEY,
+    authDomain: "",
+    databaseURL: "",
+    projectId: "vue-app-5095b",
+    storageBucket: "",
+    messagingSenderId: ""
 };
 firebase.initializeApp(config);
 
@@ -35,13 +35,13 @@ const commentsCollection = db.collection("comments");
 const likesCollection = db.collection("likes");
 
 export {
-  db,
-  auth,
-  currentUser,
-  usersCollection,
-  postsCollection,
-  commentsCollection,
-  likesCollection
+    db,
+    auth,
+    currentUser,
+    usersCollection,
+    postsCollection,
+    commentsCollection,
+    likesCollection
 };
 
 // It looks like you're using the development build of the Firebase JS SDK.
